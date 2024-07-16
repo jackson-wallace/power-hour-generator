@@ -1,9 +1,9 @@
 "use client";
 
 import { useVideos } from "@/context/video-context";
-import DropdownItem from "./dropdown-item";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Navbar from "./navbar";
 
 type Props = {};
 
@@ -60,9 +60,10 @@ const Hero = (props: Props) => {
 
   return (
     <div className="hero bg-base-200 min-h-screen max-h-screen flex flex-col">
+      <Navbar />
       <div className="hero-content text-center mt-[12vh]">
         <div className=" max-w-2xl flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-bold">🍺 Power Hour Generator 🍺</h1>
+          {/* <h1 className="text-5xl font-bold">🍺 Power Hour Generator 🍺</h1> */}
           <div className="max-w-md">
             <p className="py-6">
               Search for music videos on YouTube Videos and add them to your
